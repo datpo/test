@@ -11,7 +11,7 @@ package helloworld;
  * @author datpo_000
  */
 public class ChuanHoaHoTen {
-    String S = " daT   pO  ";
+    String S = " daT   pO yEU   eM ";
     String Kq = "";
     String ChuanHoa()
     {
