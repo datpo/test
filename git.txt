@@ -1,0 +1,292 @@
+datpo_000@datpo MINGW64 ~/Documents/NetBeansProjects/helloworld/.git (GIT_DIR!)
+$ git status
+fatal: this operation must be run in a work tree
+
+datpo_000@datpo MINGW64 ~/Documents/NetBeansProjects/helloworld/.git (GIT_DIR!)
+$ git status
+fatal: this operation must be run in a work tree
+
+datpo_000@datpo MINGW64 ~/Documents/NetBeansProjects/helloworld/.git (GIT_DIR!)
+$ ^C
+
+datpo_000@datpo MINGW64 ~/Documents/NetBeansProjects/helloworld/.git (GIT_DIR!)
+$ l
+bash: l: command not found
+
+datpo_000@datpo MINGW64 ~/Documents/NetBeansProjects/helloworld/.git (GIT_DIR!)
+$ ls
+COMMIT_EDITMSG  description  hooks/  info/  objects/
+config          HEAD         index   logs/  refs/
+
+datpo_000@datpo MINGW64 ~/Documents/NetBeansProjects/helloworld/.git (GIT_DIR!)
+$ cd ..
+
+datpo_000@datpo MINGW64 ~/Documents/NetBeansProjects/helloworld (master)
+$ ls
+ build/   build.xml   manifest.mf   nbproject/  'New Text Document.txt'   src/
+
+datpo_000@datpo MINGW64 ~/Documents/NetBeansProjects/helloworld (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   New Text Document.txt
+        modified:   build/classes/helloworld/ChuanHoaHoTen.class
+        modified:   build/classes/helloworld/Helloworld.class
+        modified:   nbproject/private/private.xml
+        modified:   src/helloworld/ChuanHoaHoTen.java
+        modified:   src/helloworld/Helloworld.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        build/classes/gamecaro/
+        build/classes/helloworld/Animal.class
+        build/classes/helloworld/Dog.class
+        build/classes/helloworld/GhiDe.class
+        build/classes/helloworld/Helloworld$1.class
+        build/classes/helloworld/Helloworld$2.class
+        build/classes/helloworld/Helloworld$ButtonHandl.class
+        build/classes/helloworld/Helloworld$Display.class
+        build/classes/helloworld/Meo.class
+        src/helloworld/Animal.java
+        src/helloworld/GhiDe.java
+        src/helloworld/QuanCo.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+datpo_000@datpo MINGW64 ~/Documents/NetBeansProjects/helloworld (master)
+$ cd .git
+
+datpo_000@datpo MINGW64 ~/Documents/NetBeansProjects/helloworld/.git (GIT_DIR!)
+$ cd ..
+
+datpo_000@datpo MINGW64 ~/Documents/NetBeansProjects/helloworld (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   New Text Document.txt
+        modified:   build/classes/helloworld/ChuanHoaHoTen.class
+        modified:   build/classes/helloworld/Helloworld.class
+        modified:   nbproject/private/private.xml
+        modified:   src/helloworld/ChuanHoaHoTen.java
+        modified:   src/helloworld/Helloworld.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        build/classes/gamecaro/
+        build/classes/helloworld/Animal.class
+        build/classes/helloworld/Dog.class
+        build/classes/helloworld/GhiDe.class
+        build/classes/helloworld/Helloworld$1.class
+        build/classes/helloworld/Helloworld$2.class
+        build/classes/helloworld/Helloworld$ButtonHandl.class
+        build/classes/helloworld/Helloworld$Display.class
+        build/classes/helloworld/Meo.class
+        src/helloworld/Animal.java
+        src/helloworld/GhiDe.java
+        src/helloworld/QuanCo.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+datpo_000@datpo MINGW64 ~/Documents/NetBeansProjects/helloworld (master)
+$ git add -A
+
+datpo_000@datpo MINGW64 ~/Documents/NetBeansProjects/helloworld (master)
+$ git commit -m "t"
+[master d9bc582] t
+ 20 files changed, 431 insertions(+), 7 deletions(-)
+ create mode 100644 build/classes/gamecaro/QuanCo$1.class
+ create mode 100644 build/classes/gamecaro/QuanCo$2.class
+ create mode 100644 build/classes/gamecaro/QuanCo.class
+ create mode 100644 build/classes/helloworld/Animal.class
+ create mode 100644 build/classes/helloworld/Dog.class
+ create mode 100644 build/classes/helloworld/GhiDe.class
+ create mode 100644 build/classes/helloworld/Helloworld$1.class
+ create mode 100644 build/classes/helloworld/Helloworld$2.class
+ create mode 100644 build/classes/helloworld/Helloworld$ButtonHandl.class
+ create mode 100644 build/classes/helloworld/Helloworld$Display.class
+ rewrite build/classes/helloworld/Helloworld.class (100%)
+ create mode 100644 build/classes/helloworld/Meo.class
+ create mode 100644 src/helloworld/Animal.java
+ create mode 100644 src/helloworld/GhiDe.java
+ create mode 100644 src/helloworld/QuanCo.java
+
+datpo_000@datpo MINGW64 ~/Documents/NetBeansProjects/helloworld (master)
+$ git remote -a
+error: unknown switch `a'
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+datpo_000@datpo MINGW64 ~/Documents/NetBeansProjects/helloworld (master)
+$ git remot
+
+datpo_000@datpo MINGW64 ~/Documents/NetBeansProjects/helloworld (master)
+$ git remote
+origin
+
+datpo_000@datpo MINGW64 ~/Documents/NetBeansProjects/helloworld (master)
+$ git push origin ^C
+
+datpo_000@datpo MINGW64 ~/Documents/NetBeansProjects/helloworld (master)
+$ git branch
+* master
+
+datpo_000@datpo MINGW64 ~/Documents/NetBeansProjects/helloworld (master)
+$ git push origin master
+Enumerating objects: 44, done.
+Counting objects: 100% (44/44), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (27/27), done.
+Writing objects: 100% (30/30), 9.89 KiB | 1.24 MiB/s, done.
+Total 30 (delta 7), reused 0 (delta 0)
+remote: Resolving deltas: 100% (7/7), completed with 5 local objects.
+To https://github.com/datpo/test.git
+   44633e9..d9bc582  master -> master
+
+datpo_000@datpo MINGW64 ~/Documents/NetBeansProjects/helloworld (master)
+$ git branh
+git: 'branh' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+
+datpo_000@datpo MINGW64 ~/Documents/NetBeansProjects/helloworld (master)
+$ git branch
+* master
+
+datpo_000@datpo MINGW64 ~/Documents/NetBeansProjects/helloworld (master)
+$ git checkout -b feature_x
+Switched to a new branch 'feature_x'
+
+datpo_000@datpo MINGW64 ~/Documents/NetBeansProjects/helloworld (feature_x)
+$ s
+bash: s: command not found
+
+datpo_000@datpo MINGW64 ~/Documents/NetBeansProjects/helloworld (feature_x)
+$ ls
+ build/   build.xml   manifest.mf   nbproject/  'New Text Document.txt'   src/
+
+datpo_000@datpo MINGW64 ~/Documents/NetBeansProjects/helloworld (feature_x)
+$ nano build.xml
+
+datpo_000@datpo MINGW64 ~/Documents/NetBeansProjects/helloworld (feature_x)
+$ git status
+On branch feature_x
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   build.xml
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+datpo_000@datpo MINGW64 ~/Documents/NetBeansProjects/helloworld (feature_x)
+$ git branch
+* feature_x
+  master
+
+datpo_000@datpo MINGW64 ~/Documents/NetBeansProjects/helloworld (feature_x)
+$ git add -A
+
+datpo_000@datpo MINGW64 ~/Documents/NetBeansProjects/helloworld (feature_x)
+$ git commit -m "test branch"
+[feature_x 12bc046] test branch
+ 1 file changed, 1 insertion(+)
+
+datpo_000@datpo MINGW64 ~/Documents/NetBeansProjects/helloworld (feature_x)
+$ git push origin feature_x
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 281 bytes | 281.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'feature_x' on GitHub by visiting:
+remote:      https://github.com/datpo/test/pull/new/feature_x
+remote:
+To https://github.com/datpo/test.git
+ * [new branch]      feature_x -> feature_x
+
+datpo_000@datpo MINGW64 ~/Documents/NetBeansProjects/helloworld (feature_x)
+$ git remote add ^C
+
+datpo_000@datpo MINGW64 ~/Documents/NetBeansProjects/helloworld (feature_x)
+$ ^C
+
+datpo_000@datpo MINGW64 ~/Documents/NetBeansProjects/helloworld (feature_x)
+$ ^C
+
+datpo_000@datpo MINGW64 ~/Documents/NetBeansProjects/helloworld (feature_x)
+$ git remote -a
+error: unknown switch `a'
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+datpo_000@datpo MINGW64 ~/Documents/NetBeansProjects/helloworld (feature_x)
+$ git remote -v
+origin  https://github.com/datpo/test.git (fetch)
+origin  https://github.com/datpo/test.git (push)
+
+datpo_000@datpo MINGW64 ~/Documents/NetBeansProjects/helloworld (feature_x)
+$ git remote add THD ^C
+
+datpo_000@datpo MINGW64 ~/Documents/NetBeansProjects/helloworld (feature_x)
+$ ^C
+
+datpo_000@datpo MINGW64 ~/Documents/NetBeansProjects/helloworld (feature_x)
+$ touch .gitignore
+
+datpo_000@datpo MINGW64 ~/Documents/NetBeansProjects/helloworld (feature_x)
+$ nano .git
+.git/       .gitignore
+
+datpo_000@datpo MINGW64 ~/Documents/NetBeansProjects/helloworld (feature_x)
+$ nano .git
+.git/       .gitignore
+
+datpo_000@datpo MINGW64 ~/Documents/NetBeansProjects/helloworld (feature_x)
+$ nano .gitignore
+
+datpo_000@datpo MINGW64 ~/Documents/NetBeansProjects/helloworld (feature_x)
+$
