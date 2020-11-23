@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">CyberSignUM</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Nguyễn văn A</string>
+    <string name="nav_header_subtitle">nguyenvana@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Đăng xuất</string>
+
+    <string name="menu_home">CyberHSM</string>
+    <string name="menu_gallery">Thông tin người dùng</string>
+    <string name="menu_slideshow">Lịch sử ký</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
